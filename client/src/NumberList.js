@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Divider from '@material-ui/core/Divider';
@@ -11,25 +12,38 @@ import Loader from './Loader';
 const useStyles = makeStyles(theme => ({
   root: {
     width: '100%',
-    maxWidth: 360,
-    backgroundColor: theme.palette.background.paper
+    backgroundColor: theme.palette.background.paper,
+    overflow: 'auto',
+    maxHeight: 600
+  },
+  capitalText: {
+    textTransform: 'uppercase',
+    display: 'inline'
   },
   inline: {
     display: 'inline'
+  },
+  loadingContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   }
 }));
 
 export default function NumberList(props) {
   const classes = useStyles();
-  const { items, loading } = props;
+  const { items, loading, loadingNew } = props;
 
-  if (loading) {
+  if (loading && loadingNew) {
     return <Loader />;
   }
 
   return (
     <List className={classes.root}>
-      {items.map(item => {
+      {loading && <div className={classes.loadingContainer}><CircularProgress /></div>}
+
+      {(items || []).map(item => {
         const {
           CLD: phoneNumber,
           country_code: countryCode,
@@ -43,7 +57,7 @@ export default function NumberList(props) {
                 <Typography
                   component="span"
                   variant="body2"
-                  className={classes.inline}
+                  className={classes.capitalText}
                   color="textPrimary"
                 >
                   {countryCode}
