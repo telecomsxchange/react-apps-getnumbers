@@ -4,13 +4,17 @@ const cors = require('cors');
 const DigestFetch = require('digest-fetch');
 const qs = require('qs');
 const app = express();
+const config = require('./config');
 
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', function(req, res) {
-  const client = new DigestFetch('tcxc_route_tester', 'T2HYImI2mSNA');
+  const client = new DigestFetch(
+    config.telecomsxchange.user,
+    config.telecomsxchange.password
+  );
 
   const url =
     'https://apiv2.telecomsxchange.com/buyers/tools/getnumbers?' +
