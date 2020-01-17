@@ -7,28 +7,28 @@ LIVE DEMO: https://tools.telecomsxchange.com
 
 Local Setup
 
-  set PROCESS.ENV VARIABLE
-    TELE_USER_NAME, TELE_USER_PASSWORD
+- Clone the project
+- run command: yarn 
+- run command: TELE_USER_NAME=BUYERUSERNAME TELE_USER_PASSWORD=API-KEY node app.js
+- run command: yarn start
 
-* run this command or put this in package.json
-
-TELE_USER_NAME=BUYERUSERNAME TELE_USER_PASSWORD=API-KEY node app.js
-
-* Push to Heorku
+* Deploy to Heorku
 
 
 - git clone the repo
-- create app on heroku
+- cd /react-apps-getnumbers
+- create app on heroku http://heroku.com 
 - heroku git:remote -a app-name (check this on heroku page)
 - git push heroku master
 - set config vars on heroku 
 
+In Terminal:
 Command: heroku config:set TELE_USER_NAME={TelecomsXchange Username}
 Command: heroku config:set TELE_USER_PASSWORD={TelecomsXChange API Key}
 
-Make sure variables are correct set:
+To make sure variables are correct set:
 
-Command: heroku config
+run command: heroku config
 
 
 
