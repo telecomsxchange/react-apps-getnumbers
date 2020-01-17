@@ -14,7 +14,7 @@ Local Setup
 
 TELE_USER_NAME=BUYERUSERNAME TELE_USER_PASSWORD=API-KEY node app.js
 
-*Push to Heorku
+* Push to Heorku
 
 
 - git clone the repo
@@ -38,10 +38,10 @@ Command: heroku config
 2. Set the backend environment variable URl (For the backend)
 
 
-*run this command or put this in package.json
+* run this command or put this in package.json
 
 
-*Deploy Front end to Netlify
+* Deploy Front end to Netlify
 
 - cd to the project root
 - Update the .env URL variable to the public backend URL
@@ -49,6 +49,23 @@ Command: heroku config
 - run command: yarn build
 - cd build
 - Deploy to Netlify
+
+
+# Rebranding
+
+To rebrand this app using your logo and own favicon, follow below steps:
+
+- rename your company logo to logo.png
+- drag and drop it to the src folder
+- generate a favicon from your logo at http://favicon-generator.org
+- download favicon and rename it to favicon.ico 
+- drag and drop favicon.ico in /public folder
+- run command: yarn build
+- deploy to Netlify 
+
+
+
+
 
 
 
