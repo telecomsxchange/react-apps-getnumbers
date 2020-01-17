@@ -53,7 +53,6 @@ run command: heroku config
 
 # Rebranding
 
-Sample Rebranding: https://tawfeer.telecomsxchange.com 
 
 To rebrand this app using your logo and own favicon, follow below steps:
 
