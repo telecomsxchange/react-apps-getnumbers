@@ -47,7 +47,8 @@ export default function NumberList(props) {
         const {
           CLD: phoneNumber,
           country_code: countryCode,
-          country_name: countryName
+          country_name: countryName,
+          description: network
         } = item;
 
         return (
@@ -74,7 +75,7 @@ export default function NumberList(props) {
                       className={classes.inline}
                       color="textPrimary"
                     >
-                      {countryName}
+                       {countryName} - {network}
                     </Typography>
                   </React.Fragment>
                 }
