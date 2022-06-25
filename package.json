@@ -13,7 +13,7 @@
     "@material-ui/core": "latest",
     "@material-ui/lab": "^4.0.0-alpha.39",
     "clsx": "latest",
-    "lodash-es": "^4.17.15",
+    "lodash-es": "^4.17.21",
     "react": "latest",
     "react-dom": "latest",
     "react-scripts": "latest",
