@@ -2,7 +2,7 @@ This React Application Utilizes this [TCXC API](https://documenter.getpostman.co
 
 LIVE DEMO: https://tools.telecomsxchange.com 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/04dee1e6-948c-4993-b4a2-9199e0c51814/deploy-status)](https://app.netlify.com/sites/tcxc-website/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/34c81db9-754c-4b56-99d4-f394065bd1f1/deploy-status)](https://app.netlify.com/sites/eloquent-joliot-0821de/deploys)
 
 
 # Backend SERVER APP
