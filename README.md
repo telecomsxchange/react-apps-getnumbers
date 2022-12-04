@@ -2,33 +2,43 @@ This React Application Utilizes this [TCXC API](https://documenter.getpostman.co
 
 LIVE DEMO: https://tools.telecomsxchange.com 
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/04dee1e6-948c-4993-b4a2-9199e0c51814/deploy-status)](https://app.netlify.com/sites/tcxc-website/deploys)
+
 
 # Backend SERVER APP
 
-Local Setup
+**Local Setup**
 
-- Clone the project
-- run command: yarn 
-- run command: TELE_USER_NAME=BUYERUSERNAME TELE_USER_PASSWORD=API-KEY node app.js
-- run command: yarn start
+```bash  
+git clone the https://github.com/telecomsxchange/react-apps-getnumbers 
+cd /react-apps-getnumbers
+yarn
+TELE_USER_NAME=BUYERUSERNAME TELE_USER_PASSWORD=API-KEY node app.js
+yarn start
 
-* Deploy to Heorku
+```
 
 
-- git clone the repo
-- cd /react-apps-getnumbers
+**Deploy to Heorku**
+
+
+```bash  
+git clone the https://github.com/telecomsxchange/react-apps-getnumbers 
+cd /react-apps-getnumbers
+
+```
 - create app on heroku http://heroku.com 
 - heroku git:remote -a app-name (check this on heroku page)
 - git push heroku master
 - set config vars on heroku 
 
 In Terminal:
-Command: heroku config:set TELE_USER_NAME={TelecomsXchange Username}
-Command: heroku config:set TELE_USER_PASSWORD={TelecomsXChange API Key}
+Command: `heroku config:set TELE_USER_NAME={TelecomsXchange Username}`
+Command: `heroku config:set TELE_USER_PASSWORD={TelecomsXChange API Key}`
 
 To make sure variables are correct set:
 
-run command: heroku config
+run command: `heroku config`
 
 
 
@@ -44,11 +54,11 @@ run command: heroku config
 * Deploy Front end to Netlify
 
 - cd to the project root
-- Update the .env URL variable to the public backend URL
-- run command: yarn
-- run command: yarn build
-- cd build
-- Deploy to Netlify
+- Update the `.env` URL variable to the public backend URL
+- run command: `yarn`
+- run command: `yarn build`
+- `cd build`
+- Deploy build to Netlify 
 
 
 # Rebranding
