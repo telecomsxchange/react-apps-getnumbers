@@ -22,7 +22,7 @@
     "digest-fetch": "^1.0.9",
     "express": "^4.17.1",
     "node-fetch": "^2.6.7",
-    "qs": "^6.9.1"
+    "qs": "^6.9.7"
   },
   "browserslist": {
     "production": [
